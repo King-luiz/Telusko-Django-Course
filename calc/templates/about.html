@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | Django Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background:#f4f6f8;
+        }
+
+        /* Navbar */
+        .navbar{
+            background:#222;
+            padding:15px 40px;
+            color:white;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .navbar a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+        }
+
+        .navbar a:hover{
+            text-decoration:underline;
+        }
+
+        /* About Section */
+        .about{
+            padding:80px 40px;
+            background:white;
+        }
+
+        .about h1{
+            font-size:36px;
+            margin-bottom:10px;
+        }
+
+        .about p{
+            color:#555;
+            font-size:18px;
+            line-height:1.6;
+        }
+    </style>
+</head>
+<body bg-color="blue">
+
+    {% block content%}
+
+        {% endblock %}
+
+    <div class="navbar">
+        <div class="logo">
+            <a href="/">Django Project</a>
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="about">
+        <h1>About Us</h1>
+    </div>
+    <div>
+
+
+
+    </div>
+    <div>
+        {% comment %} {% extends "about.html" %}
+
+        {% block content %}
+
+        {% endblock %} {% endcomment %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Django Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background:#f4f6f8;
+        }
+
+        /* Navbar */
+        .navbar{
+            background:#222;
+            padding:15px 40px;
+            color:white;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .navbar a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+        }
+
+        .navbar a:hover{
+            text-decoration:underline;
+        }
+
+        /* Hero Section */
+        .hero{
+            padding:80px 40px;
+            text-align:center;
+            background:white;
+        }
+
+        .hero h1{
+            font-size:42px;
+            margin-bottom:10px;
+        }
+
+        .hero p{
+            color:#555;
+            font-size:18px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:10px 25px;
+            background:#007bff;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        /* Content Section */
+        .content{
+            padding:50px 40px;
+            display:flex;
+            gap:20px;
+            justify-content:space-between;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            border-radius:8px;
+            box-shadow:0 2px 6px rgba(0,0,0,0.1);
+            flex:1;
+        }
+
+        /* Footer */
+        .footer{
+            margin-top:40px;
+            padding:20px;
+            text-align:center;
+            background:#222;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div><strong>DjangoApp</strong></div>
+        <div>
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="block.html">Block</a>
+
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to Your Django Website</h1>
+        <p>This is a simple homepage template built with Django.</p>
+        <a href="#" class="btn">Get Started {{name}}</a>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <div class="card">
+            <h3>Fast Development</h3>
+            <p>Django helps you build web applications quickly and efficiently.</p>
+        </div>
+
+        <div class="card">
+            <h3>Secure</h3>
+            <p>Built-in security features protect your application from common attacks.</p>
+        </div>
+
+        <div class="card">
+            <h3>Scalable</h3>
+            <p>Grow your application easily as your users increase.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; {% now "Y" %} DjangoApp. All rights reserved.
+    </div>
+
+</body>
+</html>
