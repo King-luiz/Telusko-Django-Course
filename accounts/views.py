@@ -42,7 +42,7 @@ def register(request):
                 user = User.objects.create_user(username=username, email=email, password=password1)
                 user.save()
                 message.info(request, "User created")
-                return redirect('/')
+                return redirect('login')
         else:
             message.info(request, "Password not matching")
             
