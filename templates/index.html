@@ -8,10 +8,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Travello</title>
+<title>Travello - Your Ultimate Travel Partner</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Travello template project">
+<meta name="description" content="Discover amazing destinations with Travello - Your trusted travel partner for unforgettable adventures">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
 <link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
@@ -38,19 +38,19 @@
 								<ul class="d-flex flex-row align-items-start justify-content-start">
 									<li class="active"><a href="{% url 'index' %}">Home</a></li>
 									<li><a href="#">About us</a></li>
-									<li><a href="#">Services</a></li>
+									<li><a href="#">Destinations</a></li>
 	                           {% if user.is_authenticated %}
-				                    <li>Hello, {{user.username}} </li>
+				                    <li>Welcome, {{user.username}} </li>
 				                    <li><a href="accounts/logout">Logout</a></li>
 
 				                     {% else %}
-				                    <li><a href="accounts/register">Register</a></li>
-				                    <li><a href="accounts/login">Login</a></li>
+				                    <li><a href="accounts/register">Join Now</a></li>
+				                    <li><a href="accounts/login">Sign In</a></li>
 
 				                    {% endif %}
 								</ul>
 							</nav>
-							<div class="header_phone ml-auto">Call us: 00-56 445 678 33</div>
+							<div class="header_phone ml-auto">Call us: +1-800-TRAVELLO</div>
 
 							<!-- Hamburger -->
 
@@ -68,8 +68,8 @@
 				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
 				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
 				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 			</ul>
 		</div>
@@ -86,27 +86,27 @@
 			<ul>
 				<li><a href="{% url 'index' %}">Home</a></li>
 				<li><a href="#">About us</a></li>
-				<li><a href="#">Services</a></li>
+				<li><a href="#">Destinations</a></li>
 
 				{% if user.is_authenticated %}
-				<li>Hello, {{user.username}} </li>
+				<li>Welcome, {{user.username}} </li>
 				<li><a href="accounts/logout">Logout</a></li>
 
 				{% else %}
-				<li><a href="accounts/register">Register</a></li>
-				<li><a href="accounts/login">Login</a></li>
+				<li><a href="accounts/register">Join Now</a></li>
+				<li><a href="accounts/login">Sign In</a></li>
 
 				{% endif %}
 			</ul>
 		</div>
 		<div class="menu_social">
-			<div class="menu_phone ml-auto">Call us: 00-56 445 678 33</div>
+			<div class="menu_phone ml-auto">Call us: +1-800-TRAVELLO</div>
 			<ul class="d-flex flex-row align-items-start justify-content-start">
 				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
 				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
 				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 			</ul>
 		</div>
@@ -120,7 +120,7 @@
 		<div class="home_slider_container">
 			<div class="owl-carousel owl-theme home_slider">
 
-				<!-- Slide -->
+				<!-- Slide 1 -->
 				<div class="owl-item">
 					<div class="background_image" style="background-image:url('{% static 'images/home_slider.jpg' %}')"></div>
 					<div class="home_slider_content_container">
@@ -128,7 +128,7 @@
 							<div class="row">
 								<div class="col">
 									<div class="home_slider_content">
-										<div class="home_title"><h2>Let us take you away</h2></div>
+										<div class="home_title"><h2>Discover Your Next Adventure</h2></div>
 									</div>
 								</div>
 							</div>
@@ -136,7 +136,7 @@
 					</div>
 				</div>
 
-				<!-- Slide -->
+				<!-- Slide 2 -->
 				<div class="owl-item">
 					<div class="background_image" style="background-image:url('{% static 'images/home_slider.jpg' %}')"></div>
 					<div class="home_slider_content_container">
@@ -144,7 +144,7 @@
 							<div class="row">
 								<div class="col">
 									<div class="home_slider_content">
-										<div class="home_title"><h2>Let us take you away</h2></div>
+										<div class="home_title"><h2>Experience World-Class Destinations</h2></div>
 									</div>
 								</div>
 							</div>
@@ -152,7 +152,7 @@
 					</div>
 				</div>
 
-				<!-- Slide -->
+				<!-- Slide 3 -->
 				<div class="owl-item">
 					<div class="background_image" style="background-image:url('{% static 'images/home_slider.jpg' %}')"></div>
 					<div class="home_slider_content_container">
@@ -160,7 +160,7 @@
 							<div class="row">
 								<div class="col">
 									<div class="home_slider_content">
-										<div class="home_title"><h2>Let us take you away</h2></div>
+										<div class="home_title"><h2>Create Memories That Last Forever</h2></div>
 									</div>
 								</div>
 							</div>
@@ -172,9 +172,9 @@
 
 			<div class="home_page_nav">
 				<ul class="d-flex flex-column align-items-end justify-content-end">
-					<li><a href="#" data-scroll-to="#destinations">Offers<span>01</span></a></li>
-					<li><a href="#" data-scroll-to="#testimonials">Testimonials<span>02</span></a></li>
-					<li><a href="#" data-scroll-to="#news">Latest<span>03</span></a></li>
+					<li><a href="#" data-scroll-to="#destinations">Destinations<span>01</span></a></li>
+					<li><a href="#" data-scroll-to="#testimonials">Reviews<span>02</span></a></li>
+					<li><a href="#" data-scroll-to="#news">Travel Tips<span>03</span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -187,15 +187,20 @@
 			<div class="row">
 				<div class="col">
 					<div class="home_search_container">
-						<div class="home_search_title">Search for your trip</div>
+						<div class="home_search_title">Find Your Dream Vacation</div>
 						<div class="home_search_content">
 							<form action="#" class="home_search_form" id="home_search_form">
 								<div class="d-flex flex-lg-row flex-column align-items-start justify-content-lg-between justify-content-start">
-									<input type="text" class="search_input search_input_1" placeholder="City" required="required">
-									<input type="text" class="search_input search_input_2" placeholder="Departure" required="required">
-									<input type="text" class="search_input search_input_3" placeholder="Arrival" required="required">
-									<input type="text" class="search_input search_input_4" placeholder="Budget" required="required">
-									<button class="home_search_button">search</button>
+									<input type="text" class="search_input search_input_1" placeholder="Destination" required="required">
+									<input type="date" class="search_input search_input_2" placeholder="Check-in Date" required="required">
+									<input type="date" class="search_input search_input_3" placeholder="Check-out Date" required="required">
+									<select class="search_input search_input_4" required="required">
+										<option value="">Select Budget</option>
+										<option value="500">$500 - $1000</option>
+										<option value="1000">$1000 - $2000</option>
+										<option value="2000">$2000+</option>
+									</select>
+									<button class="home_search_button">Explore Now</button>
 								</div>
 							</form>
 						</div>
@@ -218,10 +223,10 @@
 							<!-- Intro Item -->
 							<div class="col-lg-4 intro_col">
 								<div class="intro_item d-flex flex-row align-items-end justify-content-start">
-									<div class="intro_icon"><img src="{% static 'images/beach.svg' %}" alt=""></div>
+									<div class="intro_icon"><img src="{% static 'images/beach.svg' %}" alt="Top Destinations"></div>
 									<div class="intro_content">
-										<div class="intro_title">Top Destinations</div>
-										<div class="intro_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+										<div class="intro_title">Premium Destinations</div>
+										<div class="intro_subtitle"><p>Handpicked locations across 50+ countries for unforgettable experiences</p></div>
 									</div>
 								</div>
 							</div>
@@ -229,10 +234,10 @@
 							<!-- Intro Item -->
 							<div class="col-lg-4 intro_col">
 								<div class="intro_item d-flex flex-row align-items-end justify-content-start">
-									<div class="intro_icon"><img src="{% static 'images/wallet.svg' %}" alt=""></div>
+									<div class="intro_icon"><img src="{% static 'images/wallet.svg' %}" alt="Best Prices"></div>
 									<div class="intro_content">
-										<div class="intro_title">The Best Prices</div>
-										<div class="intro_subtitle"><p>Sollicitudin mauris lobortis in.</p></div>
+										<div class="intro_title">Best Value Guarantee</div>
+										<div class="intro_subtitle"><p>Get the most competitive prices with our price match guarantee</p></div>
 									</div>
 								</div>
 							</div>
@@ -240,10 +245,10 @@
 							<!-- Intro Item -->
 							<div class="col-lg-4 intro_col">
 								<div class="intro_item d-flex flex-row align-items-end justify-content-start">
-									<div class="intro_icon"><img src="{% static 'images/suitcase.svg' %}" alt=""></div>
+									<div class="intro_icon"><img src="{% static 'images/suitcase.svg' %}" alt="Amazing Services"></div>
 									<div class="intro_content">
-										<div class="intro_title">Amazing Services</div>
-										<div class="intro_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+										<div class="intro_title">24/7 Support</div>
+										<div class="intro_subtitle"><p>Round-the-clock assistance for all your travel needs and emergencies</p></div>
 									</div>
 								</div>
 							</div>
@@ -261,7 +266,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
-					<div class="section_subtitle">simply amazing places</div>
+					<div class="section_subtitle">carefully curated experiences</div>
 					<div class="section_title"><h2>Popular Destinations</h2></div>
 				</div>
 			</div>
@@ -275,7 +280,7 @@
 						<!-- Destination -->
 						<div class="destination item">
 							<div class="destination_image">
-								<img src="{{dest.img.url}}" alt="">
+								<img src="{{dest.img.url}}" alt="{{dest.name}}">
 
 								{% if dest.offer %}
 
@@ -303,8 +308,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
-					<div class="section_subtitle">simply amazing places</div>
-					<div class="section_title"><h2>Testimonials</h2></div>
+					<div class="section_subtitle">real stories from our travelers</div>
+					<div class="section_title"><h2>Traveler Reviews</h2></div>
 				</div>
 			</div>
 			<div class="row testimonials_row">
@@ -316,33 +321,33 @@
 
 							<!-- Slide -->
 							<div class="owl-item text-center">
-								<div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</div>
+								<div class="testimonial">"Travello made our honeymoon absolutely perfect! Everything was arranged flawlessly, from flights to accommodations. The attention to detail was incredible."</div>
 								<div class="testimonial_author">
 									<div class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
-										<div>john turner,</div>
-										<div>client</div>
+										<div>Sarah & Michael Johnson,</div>
+										<div>Newlyweds</div>
 									</div>
 								</div>
 							</div>
 
 							<!-- Slide -->
 							<div class="owl-item text-center">
-								<div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</div>
+								<div class="testimonial">"As a solo traveler, I was hesitant about booking an international trip. Travello provided excellent guidance and support throughout my journey to Bali."</div>
 								<div class="testimonial_author">
 									<div class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
-										<div>john turner,</div>
-										<div>client</div>
+										<div>Jessica Miller,</div>
+										<div>Solo Traveler</div>
 									</div>
 								</div>
 							</div>
 
 							<!-- Slide -->
 							<div class="owl-item text-center">
-								<div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</div>
+								<div class="testimonial">"Our family vacation to Greece was seamless thanks to Travello. They handled all the logistics perfectly, allowing us to focus on making memories with our kids."</div>
 								<div class="testimonial_author">
 									<div class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
-										<div>john turner,</div>
-										<div>client</div>
+										<div>The Rodriguez Family,</div>
+										<div>Family Vacation</div>
 									</div>
 								</div>
 							</div>
@@ -354,9 +359,9 @@
 		</div>
 		<div class="test_nav">
 			<ul class="d-flex flex-column align-items-end justify-content-end">
-				<li><a href="#">City Breaks Clients<span>01</span></a></li>
-				<li><a href="#">Cruises Clients<span>02</span></a></li>
-				<li><a href="#">All Inclusive Clients<span>03</span></a></li>
+				<li><a href="#">Honeymoon Travelers<span>01</span></a></li>
+				<li><a href="#">Solo Adventurers<span>02</span></a></li>
+				<li><a href="#">Family Vacations<span>03</span></a></li>
 			</ul>
 		</div>
 	</div>
@@ -371,60 +376,60 @@
 
 						<!-- News Post -->
 						<div class="news_post d-flex flex-md-row flex-column align-items-start justify-content-start">
-							<div class="news_post_image"><img src="{% static 'images/news_1.jpg' %}" alt=""></div>
+							<div class="news_post_image"><img src="{% static 'images/news_1.jpg' %}" alt="Packing Tips"></div>
 							<div class="news_post_content">
 								<div class="news_post_date d-flex flex-row align-items-end justify-content-start">
-									<div>02</div>
-									<div>june</div>
+									<div>15</div>
+									<div>Dec</div>
 								</div>
-								<div class="news_post_title"><a href="#">Best tips to travel light</a></div>
+								<div class="news_post_title"><a href="#">Essential Packing Tips for Stress-Free Travel</a></div>
 								<div class="news_post_category">
 									<ul>
-										<li><a href="#">lifestyle & travel</a></li>
+										<li><a href="#">travel tips</a></li>
 									</ul>
 								</div>
 								<div class="news_post_text">
-									<p>Pellentesque sit amet elementum ccumsan sit amet mattis eget, tristique at leo. Vivamus massa.Tempor massa et laoreet.</p>
+									<p>Learn how to pack smart for any destination with our comprehensive guide to stress-free travel packing. From carry-on essentials to climate-appropriate clothing.</p>
 								</div>
 							</div>
 						</div>
 
 						<!-- News Post -->
 						<div class="news_post d-flex flex-md-row flex-column align-items-start justify-content-start">
-							<div class="news_post_image"><img src="{% static 'images/news_2.jpg' %}" alt=""></div>
+							<div class="news_post_image"><img src="{% static 'images/news_2.jpg' %}" alt="Hidden Gems"></div>
 							<div class="news_post_content">
 								<div class="news_post_date d-flex flex-row align-items-end justify-content-start">
-									<div>01</div>
-									<div>june</div>
+									<div>10</div>
+									<div>Dec</div>
 								</div>
-								<div class="news_post_title"><a href="#">Best tips to travel light</a></div>
+								<div class="news_post_title"><a href="#">Top 10 Hidden Gems in Southeast Asia</a></div>
 								<div class="news_post_category">
 									<ul>
-										<li><a href="#">lifestyle & travel</a></li>
+										<li><a href="#">destination guide</a></li>
 									</ul>
 								</div>
 								<div class="news_post_text">
-									<p>Tempor massa et laoreet malesuada. Pellentesque sit amet elementum ccumsan sit amet mattis eget, tristique at leo.</p>
+									<p>Discover the lesser-known wonders of Southeast Asia that will make your trip truly memorable. From secluded beaches to ancient temples off the beaten path.</p>
 								</div>
 							</div>
 						</div>
 
 						<!-- News Post -->
 						<div class="news_post d-flex flex-md-row flex-column align-items-start justify-content-start">
-							<div class="news_post_image"><img src="{% static 'images/news_3.jpg' %}" alt=""></div>
+							<div class="news_post_image"><img src="{% static 'images/news_3.jpg' %}" alt="Budget Travel"></div>
 							<div class="news_post_content">
 								<div class="news_post_date d-flex flex-row align-items-end justify-content-start">
-									<div>29</div>
-									<div>may</div>
+									<div>05</div>
+									<div>Dec</div>
 								</div>
-								<div class="news_post_title"><a href="#">Best tips to travel light</a></div>
+								<div class="news_post_title"><a href="#">How to Travel Europe on a Budget</a></div>
 								<div class="news_post_category">
 									<ul>
-										<li><a href="#">lifestyle & travel</a></li>
+										<li><a href="#">budget travel</a></li>
 									</ul>
 								</div>
 								<div class="news_post_text">
-									<p>Vivamus massa.Tempor massa et laoreet malesuada. Aliquam nulla nisl, accumsan sit amet mattis.</p>
+									<p>Explore Europe without breaking the bank! Our comprehensive guide reveals money-saving tips for accommodations, transportation, and dining across the continent.</p>
 								</div>
 							</div>
 						</div>
@@ -445,8 +450,8 @@
 						<div class="travello_container">
 							<a href="#">
 								<div class="d-flex flex-column align-items-center justify-content-end">
-									<span class="travello_title">Get a 20% Discount</span>
-									<span class="travello_subtitle">Buy Your Vacation Online Now</span>
+									<span class="travello_title">Limited Time Offer</span>
+									<span class="travello_subtitle">Book Now & Save Up to 30%</span>
 								</div>
 							</a>
 						</div>
@@ -465,16 +470,16 @@
 				<div class="col">
 					<div class="newsletter">
 						<div class="newsletter_title_container text-center">
-							<div class="newsletter_title">Subscribe to our newsletter to get the latest trends & news</div>
-							<div class="newsletter_subtitle">Join our database NOW!</div>
+							<div class="newsletter_title">Get Exclusive Travel Deals & Insider Tips</div>
+							<div class="newsletter_subtitle">Subscribe to our newsletter for the best travel offers!</div>
 						</div>
 						<div class="newsletter_form_container">
 							<form action="#" class="newsletter_form d-flex flex-md-row flex-column align-items-start justify-content-between" id="newsletter_form">
 								<div class="d-flex flex-md-row flex-column align-items-start justify-content-between">
-									<div><input type="text" class="newsletter_input newsletter_input_name" id="newsletter_input_name" placeholder="Name" required="required"><div class="input_border"></div></div>
-									<div><input type="email" class="newsletter_input newsletter_input_email" id="newsletter_input_email" placeholder="Your e-mail" required="required"><div class="input_border"></div></div>
+									<div><input type="text" class="newsletter_input newsletter_input_name" id="newsletter_input_name" placeholder="Your Name" required="required"><div class="input_border"></div></div>
+									<div><input type="email" class="newsletter_input newsletter_input_email" id="newsletter_input_email" placeholder="Email Address" required="required"><div class="input_border"></div></div>
 								</div>
-								<div><button class="newsletter_button">subscribe</button></div>
+								<div><button class="newsletter_button">Subscribe</button></div>
 							</form>
 						</div>
 					</div>
@@ -487,12 +492,12 @@
 						<!-- Footer Contact Item -->
 						<div class="col-xl-4 footer_contact_col">
 							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
-								<div class="footer_contact_icon"><img src="{% static 'images/sign.svg' %}" alt=""></div>
-								<div class="footer_contact_title">give us a call</div>
+								<div class="footer_contact_icon"><img src="{% static 'images/sign.svg' %}" alt="Contact Us"></div>
+								<div class="footer_contact_title">Contact Support</div>
 								<div class="footer_contact_list">
 									<ul>
-										<li>Office Landline: +44 5567 32 664 567</li>
-										<li>Mobile: +44 5567 89 3322 332</li>
+										<li>24/7 Support: +1-800-872-8355</li>
+										<li>International: +1-212-555-1234</li>
 									</ul>
 								</div>
 							</div>
@@ -501,11 +506,13 @@
 						<!-- Footer Contact Item -->
 						<div class="col-xl-4 footer_contact_col">
 							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
-								<div class="footer_contact_icon"><img src="{% static 'images/trekking.svg' %}" alt=""></div>
-								<div class="footer_contact_title">come & drop by</div>
+								<div class="footer_contact_icon"><img src="{% static 'images/trekking.svg' %}" alt="Visit Us"></div>
+								<div class="footer_contact_title">Visit Our Office</div>
 								<div class="footer_contact_list">
 									<ul style="max-width:190px">
-										<li>4124 Barnes Street, Sanford, FL 32771</li>
+										<li>Travello Headquarters</li>
+										<li>123 Travel Street, Suite 500</li>
+										<li>New York, NY 10001</li>
 									</ul>
 								</div>
 							</div>
@@ -514,12 +521,12 @@
 						<!-- Footer Contact Item -->
 						<div class="col-xl-4 footer_contact_col">
 							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
-								<div class="footer_contact_icon"><img src="{% static 'images/around.svg' %}" alt=""></div>
-								<div class="footer_contact_title">send us a message</div>
+								<div class="footer_contact_icon"><img src="{% static 'images/around.svg' %}" alt="Email Us"></div>
+								<div class="footer_contact_title">Email Inquiries</div>
 								<div class="footer_contact_list">
 									<ul>
-										<li>youremail@gmail.com</li>
-										<li>Office@yourbusinessname.com</li>
+										<li>Bookings: bookings@travello.com</li>
+										<li>Support: help@travello.com</li>
 									</ul>
 								</div>
 							</div>
@@ -529,9 +536,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="col text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </div>
+		<div class="col text-center">
+			<p style="color: white; padding: 20px 0; margin: 0;">
+				Copyright &copy;<script>document.write(new Date().getFullYear());</script> Travello Travel Agency. All rights reserved. | 
+				Travel with confidence with our certified services
+			</p>
+		</div>
 	</footer>
 </div>
 
