@@ -51,6 +51,12 @@ def register(request):
     else:
         return render(request, 'register.html')
         
+        
+def logout(request):
+    auth.logout(request)
+    return redirect('/')
+        
+        
         # Here, you would typically add code to create the user account,
         # validate the data, and handle errors.
         

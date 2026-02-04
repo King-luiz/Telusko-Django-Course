@@ -39,7 +39,15 @@
 									<li class="active"><a href="{% url 'index' %}">Home</a></li>
 									<li><a href="#">About us</a></li>
 									<li><a href="#">Services</a></li>
-				<li><a href="accounts/register">Register</a></li>									<li><a href="#">Contact</a></li>
+	                           {% if user.is_authenticated %}
+				                    <li>Hello, {{user.username}} </li>
+				                    <li><a href="accounts/logout">Logout</a></li>
+
+				                     {% else %}
+				                    <li><a href="accounts/register">Register</a></li>
+				                    <li><a href="accounts/login">Login</a></li>
+
+				                    {% endif %}
 								</ul>
 							</nav>
 							<div class="header_phone ml-auto">Call us: 00-56 445 678 33</div>
@@ -79,8 +87,16 @@
 				<li><a href="{% url 'index' %}">Home</a></li>
 				<li><a href="#">About us</a></li>
 				<li><a href="#">Services</a></li>
+
+				{% if user.is_authenticated %}
+				<li>Hello, {{user.username}} </li>
+				<li><a href="accounts/logout">Logout</a></li>
+
+				{% else %}
 				<li><a href="accounts/register">Register</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="accounts/login">Login</a></li>
+
+				{% endif %}
 			</ul>
 		</div>
 		<div class="menu_social">
